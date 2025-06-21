@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f0f8ff, #ffffff);
+    color: #333;
+  }
+  main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 123, 204, 0.1);
+  }
+  .section-title {
+    font-size: 1.6rem;
+    padding-left: 0.75rem;
+    border-left: 6px solid #007acc;
+    color: #007acc;
+    background: #e6f0f8;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+  }
+  .departments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .card {
+    background: white;
+    border: 2px solid #007acc;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card a {
+    text-decoration: none;
+    color: #007acc;
+    font-size: 1.1rem;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 123, 204, 0.2);
+    background: #f0f8ff;
+  }
+  ul {
+    padding-left: 1.5rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  table caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #007acc;
+  }
+  thead {
+    background-color: #007acc;
+    color: white;
+  }
+  th, td {
+    padding: 0.75rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  tbody tr:hover {
+    background-color: #e0f7fa;
+  }
+  header {
+    background: linear-gradient(to right, #007acc, #00bcd4);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #005f99;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+  }
+</style>
+
+<header>
+  <h1>大阪公立大学医学部附属病院　医療機器部</h1>
+  <p>Department of Medical Devices, Osaka Metropolitan University Hospital</p>
+</header>
+
+<main>
+  <section>
+    <h2 class="section-title" style="font-size: 1.6rem; color: #007acc;">ご挨拶</h2>
+    <p>　医療技術の進歩に伴い多様な医療機器が使われる中、臨床工学技士はその操作・管理を担う専門職として誕生しました。当院では35名の臨床工学技士が各診療現場で質の高い医療を支えています。MEセンターを中心に約8,000台の医療機器を一元管理し、生命維持装置も24時間体制で対応、安全な使用環境を確保しています。<br>　技士はMEセンターをはじめ複数部署に配置され、幅広い業務に対応できる教育体制を整えつつ、専門性向上にも努め、資格取得や技術研鑽を重ねています。平成30年には旧臨床工学部と中央材料室を統合し、医療機器と診療材料の一元管理体制を確立。現在は医療の質・安全管理部にも専従スタッフを派遣し、全体として高度で安全な医療の提供に取り組んでいます。</p>
+    <p style="text-align: right; margin-top: 1rem;">医療機器部　保健主幹　松尾 光則</p>
+  </section>
+<br>
+
+  <section id="departments">
+    <h2 class="section-title" style="font-size: 1.6rem; color: #007acc;">部門紹介</h2>
+    <div class="departments">
+      <div class="card"><a href="#me">MEセンター</a></div>
+      <div class="card"><a href="#surgery">中央手術部</a></div>
+      <div class="card"><a href="#dialysis">人工腎部</a></div>
+      <div class="card"><a href="#icu">集中治療センター</a></div>
+      <div class="card"><a href="#endoscope">内視鏡センター</a></div>
+      <div class="card"><a href="#ivr">IVRセンター</a></div>
+      <div class="card"><a href="#arrhythmia">不整脈治療</a></div>
+      <div class="card"><a href="#supply">診療材料室</a></div>
+      <div class="card"><a href="#health"><font color="deepskyblue">健康長寿センター</font></a></div>
+    </div>
+  </section>
+
+  <section id="me">
+    <h2 class="section-title" style="font-size: 1.3rem; color: #000;">MEセンター</h2>
+    <p><b>＜医療機器保守管理＞</b>
+      <br>　MEセンターでは、約8,000台に及ぶ病院全体の医療機器を一元管理しており、点検・修理・保守のほか、機器貸出やトラブル対応など24時間体制で安全な医療環境の確保に努めています。
+      <br>
+      <br><b>＜管理対象：約800機種・8,200台以上＞</b>
+      <br>　例：人工呼吸器、補助循環装置（PCPS・IABP・IMPELLA）、血液浄化装置、輸注ポンプ、生体情報モニター、除細動器、心電計、パルスオキシメーター、ネブライザー など
+      <br>
+　　　 <br><b>＜院内研修＞</b>
+      <br>　安全な機器使用のため、全職員を対象に操作研修を実施。部署ごとの研修、新規導入機器の説明、eラーニング、他部門と連携した研修会など、幅広い教育活動を展開しています。
+      <br>
+　　　　<br><b>＜医療安全＞</b>
+　　　　<br>　院内の医療安全推進を目的に、「医療の質・安全管理部」へ臨床工学技士2名を専従で派遣。全体の安全体制強化に貢献しています。
+      <br>
+　　　　<br><b>＜医療機器情報室＞</b>
+　　　　<br>　新規採用品の使用適正を確認し、添付文書に基づいた運用を支援。また、医療材料の価格交渉も行い、病院経営にも寄与しています。
+　　　　<br>
+       <br><b>＜幹細胞採取業務＞</b>
+       <br>　当院は造血幹細胞移植推進拠点病院として、同種移植やHLA半合致移植を多数実施。臨床工学技士はアフェレーシス時の機器操作を担当し、移植医療を技術面から支えています。</p>
+    <table>
+      <caption>幹細胞採取 年度別件数</caption>
+      <thead>
+        <tr><th></th><th>2021年度</th><th>2022年度</th><th>2023年度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>PBSCH</td><td>63</td><td>63</td><td>51</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="surgery">
+    <h2 class="section-title" style="font-size: 1.3rem; color: #000;">中央手術部</h2>
+    <p>　中央手術部では、シリンジポンプや輸液ポンプ、生体モニタ、麻酔器、電気メス、超音波手術装置、レーザー装置、内視鏡、顕微鏡など、多岐にわたる手術関連機器が使用されています。臨床工学技士は、心臓血管外科手術における人工心肺装置の操作だけではなく、あらゆる手術関連機器について操作（清潔操作を含む）、保守点検、トラブル対応、保守管理を行い、安全な手術環境を支えています。
+      <br>　また、手術が安全かつ円滑に進行するよう、医師や看護師と連携し、機器の信頼性と安全性の確保に努めています。近年は、ロボット支援手術装置（da Vinci）、経カテーテル大動脈弁置換術（TAVI）、移動型X線透視診断装置（O-arm）など、最先端医療にも対応し、専門性の高い技術支援を行っています。
+    <br>
+    <br><b>＜体外循環業務（人工心肺）＞</b>
+<br>　心臓血管外科手術において、2名の臨床工学技士がチームに加わり、人工心肺装置や心筋保護装置の操作、循環管理を担当しています。
+<br>
+<br><b>＜TAVI（経カテーテル大動脈弁置換術）＞</b>
+<br>　低侵襲手術として注目されるTAVIでは、ステント付人工弁のローディングやペーシング操作、急変時の補助循環対応を行っています。
+<br>
+<br><b>＜ロボット手術（da Vinci）＞</b>
+<br>　前立腺全摘除術、腎部分切除術、胃切除術、弁形成術（MICS MVP）、子宮全摘出術、咽頭部がん切除術など各診療科に対応。術前準備や術中の周辺装置トラブル対応を行っています。
+<br>
+<br><b>＜O-arm支援手術＞</b>
+<br>　術中CT撮影が可能なO-armを活用し、ナビゲーションシステムとの連携による安全な手術支援を実施。装置の操作補助も担っています。</p>
+    <table>
+      <caption>中央手術部 年度別件数</caption>
+      <thead>
+        <tr><th></th><th>2021年度</th><th>2022年度</th><th>2023年度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>人工心肺</td><td>158</td><td>177</td><td>187</td></tr>
+        <tr><td>TAVI</td><td>77</td><td>91</td><td>89</td></tr>
+        <tr><td>da Vinci</td><td>330</td><td>371</td><td>510</td></tr>
+        <tr><td>O-arm</td><td>71</td><td>73</td><td>92</td></tr>
+        <tr><td>神経モニタリング</td><td>19</td><td>102</td><td>211</td></tr>
+        <tr><td>自己血回収装置</td><td>119</td><td>133</td><td>142</td></tr>
+      </tbody>
+    </table>
+</section>
+
+  <section id="dialysis">
+    <h2 class="section-title" style="font-size: 1.3rem; color: #000;">人工腎部</h2>
+    <p>　当院では昭和41年に透析室を開設し、本格的に慢性腎不全治療としての血液透析を開始しました。開設当時は腎不全患者に血液透析(HD)を施行すること自体が非常に困難でありましたが、現在は、HDだけでなく、On-line HDF、On-line HF、I-HDF、血漿交換療法(PE)をはじめとするアフェレシス療法など、多様な治療に対応しています。
+      臨床工学技士は常時4名体制で従事し、医師・看護師と連携して、入院中の患者さまが安心して治療を受けられる環境を支えています。主に以下の業務を担当しています。
+    <br>
+    <br><b>＜血液浄化装置の操作・保守管理／シャント穿刺＞</b>
+    <br>　血液浄化装置の操作・保守点検を行い、安全で安定した治療提供を支えています。また、エコー下穿刺を含むシャント穿刺にも対応しております。
+    <br>
+    <br><b>＜透析液の清浄化とOn-line HDF/HF＞</b>
+　　 <br>　私たちは「透析液の清浄化こそが良質な透析の礎である」という信念のもと、厳格な水質管理を実施しています。透析液は血液と長時間接触するため、その清浄度は治療効果に直結します。また、On-line HDF/HFでは、血液に透析液を直接補充するため、厳密な水質管理が不可欠です。エンドトキシン濃度や生菌数の定期的な測定により、超純粋透析液の安定供給を実現しています。
+    <br>
+    <br><b>＜バスキュラーアクセス評価＞</b>
+　　 <br>　透析効率と安全性を確保するため、再循環率・心拍出量の測定や、エコーを用いたシャントの血流量・形態評価を実施しています。得られたデータは、医師・看護師・臨床工学技士の多職種カンファレンスで共有され、治療方針の検討に活かされています。
+    <br>
+    <br><b>＜ソノグラファー＞</b> 
+    <br>　ソノグラファーとしてエコー下PTA（経皮的血管形成術）の補助をしています。ソノグラファーとは、超音波診断装置（エコー）を用いて体内の状態を観察し、診断や治療をサポートする人を指します。
+    <br>
+　　 <br><b>＜アフェレシス療法＞</b>
+　　 <br>　血液から病因物質を除去するアフェレシス療法も積極的に実施しています。対象疾患は自己免疫疾患、腎疾患、肝疾患、血液疾患、ABO不適合腎移植など多岐にわたります。</p>
+    <table>
+      <caption>人工腎部 年度別件数</caption>
+      <thead>
+        <tr><th></th><th>2021年度</th><th>2022年度</th><th>2023年度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>血液透析</td><td>1588</td><td>1045</td><td>1094</td></tr>
+        <tr><td>Online-HDF/HF/I-HDF</td><td>1098</td><td>741</td><td>1018</td></tr>
+        <tr><td>GCAP</td><td>60</td><td>96</td><td>89</td></tr>
+        <tr><td>膜分離血漿交換(mTPE)</td><td>24</td><td>3</td><td>14</td></tr>
+        <tr><td>遠心分離血漿交換(cTPE)</td><td>53</td><td>18</td><td>37</td></tr>
+        <tr><td>選択的血漿交換(SePE)</td><td>23</td><td>63</td><td>76</td></tr>
+        <tr><td>二重濾過血漿交換療法(DFPP)</td><td>0</td><td>3</td><td>7</td></tr>
+        <tr><td>クライオフィルトレーション</td><td>0</td><td>0</td><td>4</td></tr>
+        <tr><td>遠心分離LDL吸着</td><td>0</td><td>13</td><td>0</td></tr>
+        <tr><td>免疫吸着</td><td>0</td><td>1</td><td>6</td></tr>
+        <tr><td>活性炭吸着</td><td>3</td><td>0</td><td>0</td></tr>
+        <tr><td>エンドトキシン吸着</td><td>1</td><td>0</td><td>0</td></tr>
+        <tr><td>レオカーナ</td><td>71</td><td>4</td><td>4</td></tr>
+        <tr><td>腹水濾過濃縮再静注法(CART)</td><td>10</td><td>6</td><td>4</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="icu">
+    <h2 class="section-title" style="font-size: 1.3rem; color: #000;">集中治療センター</h2>
+    <p>　2022年4月より、集中治療センターにて臨床工学技士が平日日勤帯で常駐し、チーム医療の一員として集中治療を支えています。
+      主な業務は、人工呼吸器の管理・評価、経肺圧やEITを活用した肺保護換気戦略の実施、RSTチームへの参加、HD・CRRT・PE・PMXなどの血液浄化療法、ECMOやIABP、IMPELLAなど補助循環装置の操作支援、モニタリングシステムの保守、医療材料・滅菌器材の在庫管理、他職種向けの機器研修の実施など多岐にわたります。常に冷静な判断力と高度な専門知識をもって、患者の安全と治療効果の最大化を目指し、質の高い集中治療の提供に貢献しています。
+<br>
+<br><b>＜人工呼吸管理＞</b>
+<br>　人工呼吸器の保守管理や換気設定の評価、トラブル対応を行い、経肺圧やEITを活用した肺保護換気を実践しています。RSTチームにも集中治療担当の臨床工学技士として参画し、最適な呼吸ケアの提供に努めています。
+<br>
+<br><b>＜人工呼吸管理＞</b>
+<br>　人工呼吸器の保守管理や換気設定の評価、トラブル対応を行い、経肺圧やEITを活用した肺保護換気を実践しています。RSTチームにも集中治療担当の臨床工学技士として参画し、最適な呼吸ケアの提供に努めています。
+<br> 
+<br><b>＜人工呼吸管理＞</b>
+<br>　人工呼吸器の保守管理や換気設定の評価、トラブル対応を行い、経肺圧やEITを活用した肺保護換気を実践しています。RSTチームにも集中治療担当の臨床工学技士として参画し、最適な呼吸ケアの提供に努めています。
+<br>
+<br><b>＜人工呼吸管理＞</b>
+<br>　人工呼吸器の保守管理や換気設定の評価、トラブル対応を行い、経肺圧やEITを活用した肺保護換気を実践しています。RSTチームにも集中治療担当の臨床工学技士として参画し、最適な呼吸ケアの提供に努めています。
+<br>
+<br><b>＜人工呼吸管理＞</b>
+<br>　人工呼吸器の保守管理や換気設定の評価、トラブル対応を行い、経肺圧やEITを活用した肺保護換気を実践しています。RSTチームにも集中治療担当の臨床工学技士として参画し、最適な呼吸ケアの提供に努めています。
+<br>
+    </p>
+  </section>
+
+  <section id="endoscope">
+    <h2 class="section-title" style="font-size: 1.3rem; color: #000;">内視鏡センター</h2>
+    <p>　2022年より、内視鏡センターにおいても臨床工学技士の業務が開始されました。センターは検査室5室、透視室3室から構成され、消化器内科・消化器外科・呼吸器内科が内視鏡検査および治療を行っています。
+      臨床工学技士は、医療機器および診療材料の管理に加え、検査・治療時の支援業務全般を担当しています。また、休日・夜間の緊急内視鏡にも対応できるよう、24時間オンコール体制を整備し、診療を支えています。
+<br>
+<br><b>＜生検・色素散布の介助＞</b>
+<br>　病変の診断精度を高めるため、内視鏡検査中に行われる生検や色素散布の補助を行っています。臨床工学技士は医師の指示のもと、安全で円滑な処置が行えるよう支援しています。
+<br>
+<br><b>＜内視鏡治療時の介助＞</b>
+<br>　内視鏡治療では、電気メスのセッティング、デバイス補助、止血用デバイス（クリップ・止血鉗子など）の準備や操作補助などを担当。特にESD（内視鏡的粘膜下層剥離術）や、POEM（経口内視鏡的筋層切開術）、咽頭ESDなどの高度治療においても、治療の精度と安全性向上に貢献しています。
+<br>
+<br><b>＜医療機器・診療材料の管理＞</b>
+<br>　内視鏡センター内では約100本のスコープをはじめ、電気メスや光学内視鏡装置など多くの医療機器を臨床工学技士が管理。トラブル発生時には迅速に対応し、スムーズな診療の継続を支えています。
+</p>
+   <table>
+      <caption>内視鏡センター 年度別件数</caption>
+      <thead>
+        <tr><th>消化器内科</th><th>2022年度</th><th>2023年度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>上部消化管検査</td><td>3886</td><td>4471</td></tr>
+        <tr><td>ESD・上部EMR</td><td>388</td><td>344</td></tr>
+        <tr><td>胃食道静脈瘤治療</td><td>62</td><td>91</td></tr>
+        <tr><td>イレウス管・消化管ステント留置術</td><td>50</td><td>43</td></tr>
+        <tr><td>ERCP・EST</td><td>408</td><td>480</td></tr>
+        <tr><td>下部消化管内視鏡検査</td><td>955</td><td>1145</td></tr>
+        <tr><td>小腸バルーン内視鏡検査</td><td>153</td><td>190</td></tr>
+        <tr><td>小腸・大腸カプセル内視鏡検査</td><td>40</td><td>57</td></tr>
+        <tr><td>EUS・FNA</td><td>671</td><td>708</td></tr>
+        <tr><td>上部・下部バルーン拡張術</td><td>367</td><td>241</td></tr>
+        <tr><td>大腸ポリペクトミー・EMR</td><td>635</td><td>444</td></tr>
+        <tr><td>POEM（内視鏡的筋層切開術）</td><td>37</td><td>61</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr><th>呼吸器内科</th><th>2022年度</th><th>2023年度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>気管支鏡検査</td><td>488</td><td>402</td></tr>
+        <tr><td>クライオバイオプシー</td><td>167</td><td>154</td></tr>
+        <tr><td>超音波気管支鏡ガイド下貼り生検</td><td>125</td><td>132</td></tr>
+        <tr><td>エコーガイド下針生検</td><td>24</td><td>6</td></tr>
+        <tr><td>CTガイド下針生検</td><td>53</td><td>18</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="ivr">
+    <h2 class="section-title" style="font-size: 1.3rem; color: #000;">IVRセンター</h2>
+    <p>　IVRセンターでは、循環器・脳神経外科・放射線科のカテーテル治療を中心に、様々なデバイス（IABP・PCPS・IMPELLA等）の操作と保守、手技支援を行っています。2018年より、IVRセンターにおいても臨床工学技士の業務が開始され、循環器内科・放射線科・脳神経外科の診療支援を行っています。24時間365日のオンコール体制を整え、夜間・休日を含めた緊急対応にも対応しています。
+      臨床工学技士は、医療機器や診療材料の管理に加え、各種検査や治療時の機器操作、生命維持管理装置の操作・監視、バイタルサインの記録など、診療を技術面から幅広く支えています。医師・看護師・診療放射線技師と連携し、安全で円滑な診療の提供を目指しています。
+<br>　　
+<br><b>＜検査支援業務＞</b>
+<br>　ポリグラフや生体モニタによる心電図・SpO₂・血圧・体温の監視、スワンガンツカテーテルを用いた血行動態モニタリング（内圧・心拍出量）を実施。また、IVUS・OCT・血管内視鏡を用いた血管内画像の操作・記録、FFRによる冠動脈狭窄の機能評価も行います。
+<br>
+<br><b>＜治療支援業務＞</b>
+<br>　冠動脈や末梢動脈に対するデバルキング装置（Rotablator™、Diamondback 360®、エキシマレーザなど）の設定・操作や、ラジオ波焼灼療法機器の取扱いを行います。さらに、体外式ペースメーカの設定・操作（閾値・出力・ペーシングレート調整）にも対応しています。
+<br>
+<br><b>＜生命維持管理装置の操作＞</b>
+<br>　補助循環装置（PCPS・IABP・IMPELLA®）、人工呼吸器、麻酔器などの準備・操作・監視を行い、侵襲的治療を安全に実施できる環境を整えています。
+<br>
+<br><b>＜医療機器・医療材料の管理＞</b>
+<br>　治療・検査に用いる機器・物品の準備、清潔術野への物品供給、定数管理、トラブル対応などを行っています。医療材料選定の支援や、多職種への情報提供にも積極的に関与しています。
+<br>
+<br><b>＜多職種連携＞</b>
+<br>　診療前のカンファレンスや症例打ち合わせに参加し、医師・看護師・診療放射線技師とともに、安全かつ円滑な診療が行えるよう連携体制を強化しています。臨床工学技士は、専門性を活かしてチーム医療に貢献しています。
+
+</p>
+  <table>
+      <caption>IVRセンター 年度別件数</caption>
+      <thead>
+        <tr><th>循環器内科</th><th>2021年度</th><th>2022年度</th><th>2023年度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CAG(Ach負荷試験含む)</td><td>432</td><td>345</td><td>460</td></tr>
+        <tr><td>PCI</td><td>193</td><td>177</td><td>215</td></tr>
+        <tr><td>EVT</td><td>38</td><td>34</td><td>43</td></tr>
+        <tr><td>BPA</td><td>9</td><td>28</td><td>33</td></tr>
+        <tr><td>SG(運動負荷、NO負荷含む)</td><td>263</td><td>232</td><td>279</td></tr>
+        <tr><td>FFR / Resting Index</td><td>71</td><td>68</td><td>95</td></tr>
+        <tr><td>CFR / IMR</td><td>-</td><td>18</td><td>51</td></tr>
+        <tr><td>IVUS(NIRS含む)</td><td>134</td><td>140</td><td>131</td></tr>
+        <tr><td>OCT / OFDI</td><td>200</td><td>159</td><td>164</td></tr>
+        <tr><td>血管内視鏡</td><td>6</td><td>1</td><td>4</td></tr>
+        <tr><td>Rotablator / OAS</td><td>37</td><td>32</td><td>57</td></tr>
+        <tr><td>IVL</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>Excimer Laser</td><td>12</td><td>16</td><td>14</td></tr>
+        <tr><td>一時ペーシング</td><td>21</td><td>33</td><td>49</td></tr>
+        <tr><td>PCPS(IVRセンターでの導入数)</td><td>4</td><td>6</td><td>4</td></tr>
+        <tr><td>IABP</td><td>14</td><td>13</td><td>14</td></tr>
+        <tr><td>IMPELLA</td><td>2</td><td>5</td><td>16</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr><th>放射線科</th><th>2021年度</th><th>2022年度</th><th>2023年度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>診断</td><td>106</td><td>80</td><td>109</td></tr>
+        <tr><td>血管系IVR</td><td>568</td><td>529</td><td>528</td></tr>
+        <tr><td>非血管系IVR</td><td>85</td><td>62</td><td>87</td></tr>
+        <tr><td>RFA（肝臓、腎臓、肺、骨腫瘍）</td><td>14</td><td>34</td><td>48</td></tr>
+        <tr><td>RFA（下肢静脈瘤）</td><td>0</td><td>3</td><td>2</td></tr>
+        <tr><td>CV（PICC、CVポート含む）留置</td><td>220</td><td>236</td><td>238</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr><th>脳神経外科</th><th>2021年度</th><th>2022年度</th><th>2023年度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>診断</td><td>149</td><td>101</td><td>124</td></tr>
+        <tr><td>治療（TAE/TVE,FD留置,CAS等）</td><td>42</td><td>57</td><td>78</td></tr>
+        <tr><td>脳血栓回収術</td><td>22</td><td>9</td><td>14</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="arrhythmia">
+    <h2 class="section-title" style="font-size: 1.3rem; color: #000;">不整脈治療</h2>
+    <p>　不整脈治療部門では、心臓電気生理検査（EPS）やアブレーション、ペースメーカーやICD/CRT-Dの植込み・フォローアップに携わっています。</p>
+  </section>
+
+  <section id="supply">
+    <h2 class="section-title" style="font-size: 1.3rem; color: #000;">診療材料室</h2>
+    <p>　診療材料室は、病院全体の滅菌・医療材料業務を一元的に担う中央化部門として、臨床現場の省力化と医療サービスの質の向上を目指しています。感染防止、品質保証、安定供給、経営参画の4つを柱とし、安全・安心な医療提供を支えています。
+      臨床工学技士2名と事務員1名、また委託職員としてSPD業務担当約20名、器材業務担当約15名の、合計40名程度で構成されています。
+      <br>
+      <br><b>＜特徴・基本方針＞</b>
+　　　　<br>　・院内感染防止に積極的に取り組み、患者と医療従事者の安全を確保します。
+      <br>　・無駄のない合理的な物品管理を通じて、病院経営に貢献します。
+      <br>　・計画的な物品供給と質の高い滅菌業務で、現場の効率化を支援します。
+      <br>
+      <br><b>＜主な役割＞</b>
+　　　　<br>・感染防止：使用済み器材の洗浄・消毒・滅菌を中央化し、院内感染のリスクを低減。
+      <br>・品質保証：熟練した委託職員による洗浄・滅菌で、高い品質管理を実現。
+　　　　<br>・物品の安定供給：統計データを活用し、計画的な在庫管理と安定供給を行います。
+　　　　<br>・経営への参画：業務データを分析し、業務改善や拡充に活かします。
+　　　　<br>
+　　　　<br><b>＜導入機器（手術部含む）＞</b>
+　　　　<br>・高圧蒸気滅菌装置：8台
+　　　　<br>・過酸化水素低温ガスプラズマ滅菌装置：4台
+　　　　<br>・酸化エチレンガス滅菌装置：2台
+　　　　<br>・ウォッシャーディスインフェクター：6台
+　　　　<br>・減圧沸騰式洗浄器：2台
+　　　　<br>・カート洗浄消毒装置：1台
+　　　　<br>・RO純水製造装置：2台
+
+</p>
+  </section>
+
+  <section id="health">
+    <h2 class="section-title" style="font-size: 1.3rem; color: #000;">大阪健康長寿医科学センター（住吉市民病院跡地）</h2>
+    <p>　大阪健康長寿医科学センターは、認知症医療の高度化、地域包括ケアモデルの構築、小児・周産期医療の充実、さらに先進的な研究と人材育成を三位一体で推進する、大阪南部における新たな医療・研究の中核拠点として、令和9年に大阪市住之江区に開設される予定です。当院からは臨床工学技士を2名派遣し、本院におけるMEセンター業務および診療材料室業務に類似した形で、医療機器管理や物品管理業務等を担う予定です。</p>
+  </section>
+
+<h2 class="section-title" style="font-size: 1.6rem; color: #007acc;">学術活動</h2>
+   <p>　当部では学会発表・論文投稿を積極的に行い、臨床工学技士としての専門性の向上と医療の質の改善に貢献しています。様々な分野の学会での発表実績があります。</p>
+   <font size="4">2023年度 学会発表実績（計45件の発表・投稿から一部抜粋）</font>
+  <ul>
+      <li>第49回 日本血液浄化技術学会 『バスキュラーアクセスの機能評価における検討』</li>
+      <li>第49回 日本血液浄化技術学会 『先行的腎移植時に遠心分離血漿交換を行った1例』</li>
+      <li>日本体外循環技術近畿地方会雑誌「Perfusion Saloon」 『【雑誌投稿】臨床工学技士が博士号を取得する意義と私の経験』</li>
+      <li>第41回 日本体外循環技術医学会 近畿地方会大会 『心肺開始直後に大動脈解離となった1例を経験して』</li>
+      <li>第10回 日本手術看護学会近畿地区大会 『臨床工学技士の立場から見た当院手術室のタスクシフト・シェア』</li>
+      <li>Japan MICS Summit 2023 『経皮的脱血カニューレにおける部位別脱血量の基礎的検討』</li>
+      <li>脳神経モニタリング学会 『術中神経モニタリング業務への臨床工学技士の介入の取り組み』</li>
+      <li>第33回 日本臨床工学会 『【パネルディスカッション】ノンテクニカルスキルと医療安全』</li>
+      <li>第42回 日本心血管インターベンション治療学会近畿地方会 『基礎講演「プレッシャーワイヤー ～FFR/NHPR,CFR/IMRについて～」』</li>
+      <li>第29回 日本血液透析濾過医学会学術集会総会 『Clearum HSF22®のα1MG,β2MG除去率及びALB漏出量についての検討』</li>
+      <li>第136回 日本循環器学会近畿地方会 『当院における IMPELLA の使用経験と臨床工学技士(CE)の役割』</li>
+      <li>第99回 大阪透析研究会 『電子聴診器を用いたシャント音可視化システムの検討』</li>
+    </ul>
+  </section>
+
+  <section id="certification">
+    <h2 class="section-title" style="font-size: 1.6rem; color: #007acc;">取得認定資格等</h2>
+    <p>　医療技術の高度化に伴い、臨床工学技士には専門的かつ多岐にわたる知識と技能が求められています。当院の臨床工学技士は、日々の臨床業務に加え、各種の認定資格を取得することで専門性の向上と医療の質の確保に努めています。</p>
+    <ul>
+      <li>臨床ME専門認定士 7名</li>
+      <li>専門呼吸治療臨床工学技士 1名</li>
+      <li>専門血液浄化臨床工学技士 3名</li>
+      <li>専門心・血管カテーテル臨床工学技士 2名</li>
+      <li>専門不整脈治療臨床工学技士 1名</li>
+      <li>認定集中治療臨床工学技士 1名</li>
+      <li>認定血液浄化臨床工学技士 1名</li>
+      <li>3学会合同呼吸療法認定士 7名</li>
+      <li>透析技術認定士 4名</li>
+      <li>アフェレーシス認定技士 2名</li>
+      <li>腎代替療法専門指導士 1名</li>
+      <li>体外循環技術認定士 6名</li>
+      <li>周術期管理チーム 1名</li>
+      <li>心血管インターベンション技師 2名</li>
+      <li>CDR認定 1名</li>
+      <li>植込み型心臓不整脈デバイス認定士 1名</li>
+      <li>心電図検定1級 1名</li>
+      <li>第2種滅菌技士 1名</li>
+      <li>臨床検査技師 1名</li>
+      <li>日本DMAT 1名</li>
+      <li>大阪DMAT 1名</li>
+      <li>ICLSインストラクター 1名</li>
+      <li>ACLS大阪認定インストラクター 1名</li>
+      <li>医学博士 1名</li>
+      <li>医科学修士 3名</li>
+      <li>保健科学修士 1名</li>
+      <li>工学修士 2名</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title" style="font-size: 1.6rem; color: #007acc;">スタッフ出身校</h2>
+    <p>近畿大学、藍野大学、姫路獨協大学、広島工業大学、川崎医療福祉大学、群馬パース大学、純真学園大学、大阪ハイテクノロジー専門学校、大阪医専、神戸総合医療専門学校、京都保健衛生専門学校、さくら医療福祉専門学校</p>
+  </section>
+
+  <section id="access">
+    <h2 class="section-title" style="font-size: 1.6rem; color: #007acc;">アクセス</h2>
+    <p>〒545-0001 大阪府大阪市阿倍野区旭町1-5-7<br>
+    大阪公立大学医学部附属病院 5F 医療機器部<br>
+    最寄駅：天王寺駅 徒歩5分<br>
+    連絡先：TEL:06-6645-2887(直通）/ FAX:06-6645-2887</p>
+  </section>
+</main>
